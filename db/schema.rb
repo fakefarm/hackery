@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20180319140403) do
   enable_extension "plpgsql"
 
   create_table "searches", force: :cascade do |t|
-    t.string "query"
+    t.string "keyword"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -13,7 +13,7 @@ RSpec.describe Search, type: :model do
     end
 
     it 'validates presense of name' do
-      expect(search).to validate_presence_of(:query)
+      expect(search).to validate_presence_of(:keyword)
     end
   end
 end

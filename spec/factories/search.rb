@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :search do
-    query { ['rails', 'node', 'javascript'].sample }
+    keyword { ['rails', 'node', 'javascript'].sample }
   end
 end
