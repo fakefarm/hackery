@@ -3,19 +3,21 @@ class GithubJobsApiSearch
 
   JOBS_SEARCH_URL = "https://jobs.github.com/positions.json"
 
-  attr_reader :search_keywords, :jobs_uri
+  attr_reader :search_params
 
-  def self.call(search_keywords)
-    new(search_keywords).call
+  def self.call(search_params)
+    new(search_params).call
   end
 
-  def initialize(search_keywords)
-    @search_keywords = search_keywords
+  def initialize(search_params)
+    @search_params = search_params
   end
 
   def call
     get_jobs_via_api
   end
+
+  private
 
   def get_jobs_via_api
     Net::HTTP.get(search_uri)
@@ -26,6 +28,6 @@ class GithubJobsApiSearch
   end
 
   def format_params
-    search_keywords.delete(" \t\r\n")
+    search_params.delete(" \t\r\n")
   end
 end

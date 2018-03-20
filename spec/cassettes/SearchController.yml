@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://jobs.github.com/positions.json?search=denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - jobs.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 20 Mar 2018 00:46:18 GMT
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '4852'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"de1e2e4c-05ee-11e8-8bd7-141af965a1d0","created_at":"Fri Mar
+        02 23:09:11 UTC 2018","title":"Software Engineer, Platform","location":"Denver,
+        CO","type":"Full Time","description":"<p>About VigLink:</p>\n\n<p>At VigLink,
+        we believe the future of marketing lies within the untapped potential of digital
+        content covering commercial products across the Web. We empower influential
+        publishers who produce this content to connect enthusiastic consumers with
+        the products they love from the brands who value them the most. We accomplish
+        this directly through publishers\u2019 words, without need for an ad.</p>\n\n<p>By
+        identifying commercial products mentioned within a publisher\u2019s content,
+        VigLink automatically invigorates those terms by transforming them into hyperlinks
+        whose destinations are determined in real-time, advertiser-bid auctions. Yes,
+        hyperlinks, the defining feature of the Web from the very start. The literal
+        \u201cH\u201d in HTML. Every time a clicked link takes a person from one destination
+        to another, value is created. However, that value has never been fairly priced
+        or available for purchase at scale. Until now.</p>\n\n<p>Founded in 2009,
+        VigLink is located in heart of San Francisco and backed by top investors including
+        Google Ventures, Emergence Capital, and RRE. VigLink manages a publisher network
+        of over 2 million sites and apps, as well as an advertiser network of over
+        70,000 brands and merchants.</p>\n\n<p>About the role:</p>\n\n<p>VigLink is
+        seeking a dynamic software engineer to join our Platform team. At VigLink
+        we love go-getters and are looking for an hands-on software engineer working
+        on a java web application development platform who enjoys working with Product
+        Managers and Business teams to solve complex problems. </p>\n\n<p>Specific
+        responsibilities include:</p>\n\n<p>Developing large, complex web-based distributed
+        applications using core Java and established frameworks <br>\nAnalyzing requirements
+        and designing scalable solutions to handle large data volume while producing
+        and testing build artifacts <br>\nDesigning and implementing RESTful APIs
+        for consumption by internal and external teams utilizing established web protocols
+        to build fault-tolerant distributed systems <br>\nDeveloping and utilizing
+        automated test suites that validate API components performance at a scale
+        using CI pipelines in Jenkins <br>\nDeploying production software using AWS
+        tools and APIs and monitoring production systems to ensure that they continue
+        to run as designed and expected and modify existing software to correct errors
+        and improve its performance <br></p>\n\n<p>Technical Experience</p>\n\n<p>Candidates
+        should be able to demonstrate technical expertise in some of the following
+        technologies: Java, Hibernate, Spring MVC, SQL, Cassandra, Javascript, Elastic
+        Search, Kafka, Redshift, HTML5, Flex, RESTful web services, AWS and experience
+        building software with Test Driven Development (TDD) methodology using JUnit/TestNG
+        and JMeter.</p>\n\n<p>Required qualifications:</p>\n\n<p>1-4 years significant
+        experience as a software engineer in a production software development environment<br>\nDetailed
+        knowledge of core Java and established frameworks<br>\nPrior experience with
+        Cassandra, ElasticSearch, data warehouse technical architectures, ETL and
+        reporting/analytic tools and environments is preferred<br>\nExperience in
+        relational database concepts with knowledge of MySQL / RDS<br>\nA bachelor\u2019s
+        or higher degree in an analytical area such as computer science, physics,
+        mathematics, statistics, or engineering<br>\nExperience in the e-commerce,
+        web analytics, search, and cloud-computing space<br></p>\n\n<p>VigLink Values</p>\n\n<p>At
+        VigLink we have a great company culture where mission and values are clear,
+        communicated often, and embraced.</p>\n\n<p>Dare<br></p>\n\n<p>Overcome<br></p>\n\n<p>Challenge<br></p>\n\n<p>Collaborate<br></p>\n\n<p>Play<br></p>\n\n<p>Our
+        perks &amp; benefits include:</p>\n\n<p>Unlimited vacation time<br>\nFull
+        medical, dental and vision coverage<br>\n401(k) plan<br>\nCatered lunches
+        twice a week<br>\nWeekly happy hour<br>\nA tasty snack &amp; beverage pantry<br>\nCompany
+        gatherings and outings<br>\nMass transit and parking flexible spending accounts<br>\nWork
+        From Home (WFH) eligibility after a minimum of 3 months at the company<br>\nWe\u2019re
+        also closed on all major holidays, including an extended winter break!<br>\nRelocation
+        and travel expenses not covered</p>","how_to_apply":"<p>Apply on our website!
+        \n<a href=\"https://www.viglink.com/about/careers/\">https://www.viglink.com/about/careers/</a></p>","company":"VigLink","company_url":"https://www.viglink.com/","company_logo":"http://github-jobs.s3.amazonaws.com/bc0a6794-05ee-11e8-902a-778405599bdb.png","url":"http://jobs.github.com/positions/de1e2e4c-05ee-11e8-8bd7-141af965a1d0"}]'
+    http_version: 
+  recorded_at: Tue, 20 Mar 2018 00:46:18 GMT
+- request:
+    method: get
+    uri: https://jobs.github.com/positions.json?search=foo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - jobs.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 20 Mar 2018 00:48:58 GMT
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 20 Mar 2018 00:48:58 GMT
+recorded_with: VCR 4.0.0

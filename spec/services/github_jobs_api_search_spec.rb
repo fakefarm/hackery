@@ -13,6 +13,7 @@ RSpec.describe GithubJobsApiSearch, type: :service do
 
   describe '#initialize' do
     it 'will not raise error' do
+      
       expect{ described_class.new(search_keywords) }.not_to raise_error
     end
   end
