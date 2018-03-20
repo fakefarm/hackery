@@ -12,6 +12,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
+gem "bulma-rails", "~> 0.6.2"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
