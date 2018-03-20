@@ -1,29 +1,16 @@
-<<<<<<< HEAD
 # githired
 Job search via GitHub Jobs API
-=======
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+GitHub Jobs search example application
 
-Things you may want to cover:
+# System dependencies
 
-* Ruby version
+* `rbenv install 2.5.0`
+* `brew install postgres`
 
-* System dependencies
+# Configuration
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> Initial commit
+* `bundle install`
+* `bin/rspec`
