@@ -1,0 +1,7 @@
+
+<label class="label">Previous Searches</label>
+<% Search.keyword_count.each do |k, v| %>
+  <ul>
+    <li><%= k + ' ' + v.to_s %></li>
+  </ul>
+<% end %>

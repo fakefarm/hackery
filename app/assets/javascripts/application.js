@@ -11,5 +11,33 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require turbolinks
 //= require_tree .
+
+// $('turbolinks:load').ready(function() {
+//     $(".search-results").click(function() {
+//       alert('Page loaded.')
+//     });
+//   },
+console.log('JS loaded...');
+$(document).on('turbolinks:load', function() {
+  $.ajax({
+    // url: 'https://jobs.github.com/positions.json?search=<%= Search.last_keyword',
+    url: 'https://jobs.github.com/positions.json?search=denver',
+    dataType: 'jsonp',
+    success: function(data) {
+      for (let i = 0; i < data.length; i++) {
+        console.log(data[i].company);
+        $('.results-table')
+          .find('tbody:last')
+          .append('<tr>' + data[i].company + '</tr>')
+          .append('<tr>' + data[i].company_url + '</tr>')
+          .append('<tr>' + data[i].location + '</tr>')
+          .append('<tr>' + data[i].created_at + '</tr>')
+          .append('<tr>' + data[i].title + '</tr>')
+          .append('<tr>' + data[i].position + '</tr>');
+      }
+    }
+  });
+});

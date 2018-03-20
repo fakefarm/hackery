@@ -1,1 +1,56 @@
-<h2>Search#index</h2>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="field">
+          <label class="label">GitHired Search</label>
+          <div class="control">
+            <%= form_for :search, class: 'input' do |f| %>
+              <%= f.text_field :keyword, class: 'input', placeholder: "Enter city or language" %>
+              <%= f.submit 'Search', class: 'button' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <%= render 'previous_searches' %>
+      </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <h2 class="title is-4">
+        <%= "Search results for: '#{Search.last.keyword}'" %>
+      </h2>
+    </div>
+    <div class="column previous-search-stats">
+    <% if @searches %>
+      <h2 class="title is-4">Previous keyword searches:</h2>
+      <ul>
+        <% @searches.where(keyword: Search.last.keyword).each do |s| %>
+          <li class="subtitle is-5"><%= "#{s.keyword} - #{s.created_at}" %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    </div>
+  </div>
+  <div class="columns">
+    <div class"column">
+      <div class="search-results">
+        <table class="results-table table is-striped">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Company URL</th>
+              <th>Location</th>
+              <th>Created At</th>
+              <th>Title</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
