@@ -8,12 +8,11 @@ class SearchController < ApplicationController
   end
 
   def create
+    respond_to :html
     @search = Search.new(search_params)
 
     if @search.save
-      respond_to do |format|
-        format.js
-      end
+      redirect_to search_index_path
     end
   end
 

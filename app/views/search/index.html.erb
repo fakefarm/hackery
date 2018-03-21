@@ -5,7 +5,7 @@
         <div class="field">
           <label class="label">GitHired Search</label>
           <div class="control">
-            <%= form_for :search, class: 'input', remote: true do |f| %>
+            <%= form_for :search, class: 'input' do |f| %>
               <%= f.text_field :keyword, class: 'input', placeholder: "Enter city or language" %>
               <%= f.submit 'Search', class: 'button' %>
             <% end %>
