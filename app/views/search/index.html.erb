@@ -26,7 +26,7 @@
   <div class="columns">
     <div class"column">
       <div class="element">
-
+        <%= render 'search/search' %>
       </div>
       <%= content_tag :div, class: "search-results", data: {last_search: @searches.last_search} do %>
         <table class="results-table table is-striped">

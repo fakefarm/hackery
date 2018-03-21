@@ -1,13 +1,9 @@
-// $('.element').html('<h1>hello world</h1>')
-$("<%= escape_javascript(render @search) %>")
-// $(document).on('turbolinks:load', function() {
-  // let lastSearch = $('.search-results').data('last-search');
-  $.ajax({
-    url: 'https://jobs.github.com/positions.json?search=ruby',
-    dataType: 'jsonp',
-    success: function(data) {
-      $("<%= escape_javascript(render partial: search, locals: { results: data }) %>")
-      // console.log(data)
-    }
-  });
-// });
+var search = <%= "#{@search}" %>
+$.ajax({
+  url: 'https://jobs.github.com/positions.json?search=ruby',
+  dataType: 'jsonp',
+  success: function(data) {
+    console.log(data);
+    $('.element').html("searched for: " + search + ": " + data[0].company)
+  }
+});
